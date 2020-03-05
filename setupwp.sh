@@ -5,7 +5,7 @@ sudo apt autoremove -y
 ### Install MariaDB and PHP.
 sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring php-mysql php-soap php-xml php-xmlrpc php-zip -y
 sudo service mysql start
-### Start Mysql & Configure Secure Install.
+### Start Mysql & Create user.
 sudo mysql -uroot <<_EOF_ 
 CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'dbpass';
 GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'localhost';
