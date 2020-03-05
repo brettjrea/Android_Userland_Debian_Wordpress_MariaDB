@@ -27,8 +27,9 @@ bash fixscripts.sh && bash setupwp.sh
 
 ### Start Mysql & Create User.
 
+`sudo service mysql start`
+
 ```
-sudo service mysql start
 sudo mysql -uroot <<_EOF_ 
 CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'dbpass';
 GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'localhost';
