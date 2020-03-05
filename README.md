@@ -1,5 +1,6 @@
 # Android_Userland_Debian_Wordpress_MariaDB
 
+A setup script and breakdown to install Wordpress CMS with MariaDB on Android using Debian 10 'Buster' Linux in the [Userland App](https://github.com/CypherpunkArmory/UserLAnd). Haven't tested it on Debian 10 'Buster' for WSL or a VM but probably would work. Docker definitely needs docker specific commands
 
 # Installing quickly with a script.
 
