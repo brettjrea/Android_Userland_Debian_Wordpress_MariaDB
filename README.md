@@ -20,11 +20,10 @@ bash fixscripts.sh && bash setupwp.sh
 
 `sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring php-mysql php-soap php-xml php-xmlrpc php-zip -y`
 
-`sudo service mysql start`
-
 ### Start Mysql & Configure Secure Install.
 
 ```
+sudo service mysql start
 sudo mysql -uroot <<_EOF_ 
 CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'dbpass';
 GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'localhost';
@@ -35,7 +34,7 @@ _EOF_
 
 `mkdir /wp/`
 
-### Change into wp directory.
+### Change into WP directory.
 
 `cd /wp/`
 
