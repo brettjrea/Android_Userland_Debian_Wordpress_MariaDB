@@ -24,7 +24,7 @@ bash fixscripts.sh && bash setupwp.sh
 
 `sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring php-mysql php-soap php-xml php-xmlrpc php-zip -y`
 
-### Start Mysql & Configure Secure Install.
+### Start Mysql & Create User.
 
 ```
 sudo service mysql start
