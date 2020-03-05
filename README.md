@@ -4,17 +4,13 @@
 
 
 ```
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
 sudo apt install wget -y
 wget https://raw.githubusercontent.com/brettjrea/Scripts_Fix/master/fixscripts.sh
 wget https://raw.githubusercontent.com/brettjrea/Android_Userland_Debian_Wordpress_MariaDB/master/setupwp.sh
 bash fixscripts.sh && bash setupwp.sh
 ```
-
-### Update, upgrade & clean.
-
-`sudo apt update && sudo apt upgrade -y`
-
-`sudo apt autoremove -y`
 
 ### Install MariaDB and PHP.
 
