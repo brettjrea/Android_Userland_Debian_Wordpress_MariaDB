@@ -1,7 +1,7 @@
 # Android_Userland_Debian_Wordpress_MariaDB
 
 
-
+# Installing quickly with a script.
 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -11,6 +11,14 @@ wget https://raw.githubusercontent.com/brettjrea/Scripts_Fix/master/fixscripts.s
 wget https://raw.githubusercontent.com/brettjrea/Android_Userland_Debian_Wordpress_MariaDB/master/setupwp.sh
 bash fixscripts.sh && bash setupwp.sh
 ```
+
+### Install by doing what the script does snip by snip.
+
+### Update, upgrade & clean.
+
+`sudo apt update && sudo apt upgrade -y`
+
+`sudo apt autoremove -y`
 
 ### Install MariaDB and PHP.
 
