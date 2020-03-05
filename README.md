@@ -42,7 +42,7 @@ _EOF_
 
 `cd /wp/`
 
-### Download WP-CLI.phar.
+### Download WP-CLI.deb.
 
 ```
 TEMP_DEB="$(mktemp)" &&
@@ -50,7 +50,7 @@ wget -O "$TEMP_DEB" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli
 sudo dpkg -i "$TEMP_DEB" 
 rm -f "$TEMP_DEB"
 ```
-### Update WP-CLI.phar.
+### Update WP-CLI.
 
 `wp cli update`
 
