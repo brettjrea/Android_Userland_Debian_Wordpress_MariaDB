@@ -17,7 +17,7 @@ mkdir /wp/
 cd /wp/
 ### Download WP-CLI.phar.
 TEMP_DEB="$(mktemp)" &&
-wget -O "$TEMP_DEB" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli_2.4.0_all.deb' &&
+wget -O "$TEMP_DEB" 'https://github.com/wp-cli/builds/blob/gh-pages/deb/php-wpcli_latest_all.deb' &&
 sudo dpkg -i "$TEMP_DEB" 
 rm -f "$TEMP_DEB"
 ### Update WP-CLI.phar.
