@@ -37,7 +37,7 @@ sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring ph
 
 `sudo service mysql start`
 
-```
+```sql
 sudo mysql -uroot <<_EOF_ 
 CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'dbpass';
 GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'localhost';
