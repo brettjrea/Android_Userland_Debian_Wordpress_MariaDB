@@ -5,10 +5,13 @@ A setup script and breakdown to install Wordpress CMS with MariaDB on Android us
 # Installing quickly with a script.
 
 ```
-sudo apt update && sudo apt upgrade -y
-sudo apt autoremove -y
-sudo apt install wget -y
-wget https://raw.githubusercontent.com/brettjrea/Android_Userland_Debian_Wordpress_MariaDB/master/setupwp.sh
+sudo apt update -y &&
+sudo apt upgrade -y &&
+sudo apt autoremove -y &&
+sudo apt install wget -y &&
+wget https://raw.githubusercontent.com/brettjrea/Scripts_Fix/master/fixscripts.sh &&
+wget https://raw.githubusercontent.com/brettjrea/Android_Userland_Debian_Wordpress_MariaDB/master/setupwp.sh &&
+bash fixscripts.sh &&
 bash setupwp.sh
 ```
 
