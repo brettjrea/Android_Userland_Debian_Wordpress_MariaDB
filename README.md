@@ -55,7 +55,7 @@ _EOF_
 
 ```
 wget -O "wpcli.deb" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli_2.4.0_all.deb'
-sudo apt install ./wpcli.deb
+sudo apt install ./wpcli.deb -y
 rm -f wpcli.deb
 ```
 ### Update WP-CLI.
