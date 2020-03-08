@@ -1,9 +1,10 @@
 #!/bin/bash
 ### Update, upgrade & clean.
-sudo apt update && sudo apt upgrade -y
-sudo apt autoremove -y
+sudo apt update -y &&
+sudo apt upgrade -y &&
+sudo apt autoremove -y 
 ### Install MariaDB and PHP.
-sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring php-mysql php-soap php-xml php-xmlrpc php-zip -y
+sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring php-mysql php-soap php-xml php-xmlrpc php-zip wget -y
 ### Start Mysql & Create user.
 sudo service mysql start
 sudo mysql -uroot <<_EOF_ 
