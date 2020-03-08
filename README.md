@@ -20,9 +20,7 @@ bash setupwp.sh
 sudo apt update && sudo apt upgrade -y
 ```
 
-```
-sudo apt autoremove -y
-```
+`sudo apt autoremove -y`
 
 ### Install MariaDB and PHP.
 
@@ -31,9 +29,7 @@ sudo apt install mariadb-server php-cli php-curl php-gd php-intl php-mbstring ph
 ```
 ### Start Mysql & Create User.
 
-```
-sudo service mysql start
-```
+`sudo service mysql start`
 
 ```
 sudo mysql -uroot <<_EOF_ 
@@ -44,15 +40,11 @@ _EOF_
 ```
 ### Make WP directory.
 
-```
-mkdir /wp/
-```
+`mkdir /wp/`
 
 ### Change into WP directory.
 
-```
-cd /wp/
-```
+`cd /wp/`
 
 ### Download WP-CLI.deb.
 
@@ -63,15 +55,11 @@ rm -f wpcli.deb
 ```
 ### Update WP-CLI.
 
-```
-wp cli update
-```
+`wp cli update`
 
 ### Use WP-CLI to download wordpress to /wp.
 
-```
-wp core download --path=/wp/
-```
+`wp core download --path=/wp/`
 
 ### Use WP-CLI to Create config.php
 
@@ -80,9 +68,7 @@ wp config create --path=/wp/ --dbhost=localhost --dbname=wordpress --dbuser=dbus
 ```
 ### Use WP-CLI to create database.
 
-```
-wp db create --path=/wp/
-```
+`wp db create --path=/wp/`
 
 ### Use WP-CLI to run install.
 
@@ -92,6 +78,6 @@ wp core install --path=/wp/ --url=http://localhost:8080/ --title=wordpress --adm
 
 ### Start PHP built-in webserver on port 3000.
 
-```
+`
 wp server
-```
+`
