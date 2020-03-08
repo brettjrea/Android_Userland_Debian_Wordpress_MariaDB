@@ -17,17 +17,17 @@ mkdir /wp/
 cd /wp/
 ### Download WP-CLI.deb.
 wget -O "wpcli.deb" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli_2.4.0_all.deb'
-sudo dpkg -i wpcli.deb
+sudo apt install ./wpcli.deb
 rm -f wpcli.deb
 ### Update WP-CLI.
 wp cli update
 ### Use WP-CLI to download wordpress to /wp.
 wp core download --path=/wp/
 ### Use WP-CLI to Create config.php
-wp config create --path=/wp/ --dbhost=localhost --dbname=wpdb --dbuser=dbuser --dbpass=dbpass
+wp config create --path=/wp/ --dbhost=localhost --dbname=wordpress --dbuser=dbuser --dbpass=dbpass
 ### Use WP-CLI to create database.
 wp db create --path=/wp/
 ### Use WP-CLI to run install.
-wp core install --path=/wp/ --url=http://localhost:8080/ --title=Example --admin_user=wpadmin --admin_password=wppass --admin_email=info@example.com
+wp core install --path=/wp/ --url=http://localhost:8080/ --title=wordpress --admin_user=wpuser --admin_password=wppass --admin_email=info@example.com
 ### Start PHP built-in webserver on port 3000.
 wp server
