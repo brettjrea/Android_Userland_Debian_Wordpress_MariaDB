@@ -47,10 +47,9 @@ _EOF_
 ### Download WP-CLI.deb.
 
 ```
-TEMP_DEB="$(mktemp)" &&
-wget -O "$TEMP_DEB" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli_2.4.0_all.deb' &&
-sudo dpkg -i "$TEMP_DEB" 
-rm -f "$TEMP_DEB"
+wget -O "wpcli.deb" 'https://github.com/wp-cli/builds/raw/gh-pages/deb/php-wpcli_2.4.0_all.deb'
+sudo dpkg -i wpcli.deb
+rm -f wpcli.deb
 ```
 ### Update WP-CLI.
 
